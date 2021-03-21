@@ -1,0 +1,93 @@
+.card {
+  background-color: #fec685;
+  border-radius: 10px;
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  .card__title {
+    background-color: #91b1fd;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    .card__title__text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 3rem;
+    }
+  }
+
+  .card__body {
+    width: 100%;
+    display: flex;
+    
+    .card__body__info {
+      padding: 2rem;
+      
+      .card__body__info__title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+      }
+      .card__body__info__knowledge {
+        margin: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+
+        .card__body__info__knowledge__list {
+          list-style-type: none;
+          display: flex;
+
+          .list-item {
+            height: 50px;
+            width: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            &.list-item--javascript {
+              background-image: url(../../assets/svg/javascript-icon.svg);
+            }
+
+            &.list-item--html {
+              background-image: url(../../assets/svg/html-icon.svg);
+            }
+
+            &.list-item--css {
+              background-image: url(../../assets/svg/css-icon.svg);
+            }
+
+            &.list-item--react {
+              background-image: url(../../assets/svg/react-icon.svg);
+            }
+
+            &.list-item--cpp {
+              background-image: url(../../assets/svg/cpp-icon.svg);
+            }
+
+            &.list-item--java {
+              background-image: url(../../assets/svg/java-icon.svg);
+            }
+          }
+        }
+      }
+    }
+
+    .card__body__profile-picture {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: auto auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card__body__profile-picture__img {
+        width: 150px;
+      }
+    }
+  }
+}

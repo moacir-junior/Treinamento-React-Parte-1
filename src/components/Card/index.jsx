@@ -1,17 +1,17 @@
 import React from 'react';
 import './Card.scss';
 
-import profileImg from '../../assets/img/profile.jpeg';
-
-function Card() {
+function Card(props) {
+  const {name, role, img} = props;
+  
   return (
     <div className="card">
       <div className="card__title">
-        <span className="card__title__text">Moacir Zimermann Junior</span>
+        <span className="card__title__text">{name}</span>
       </div>
       <div className="card__body">
         <div className="card__body__info">
-          <span className="card__body__info__title">Programador</span>
+          <span className="card__body__info__title">{role}</span>
           <div className="card__body__info__knowledge">
             <span className="card__body__info__knowledge__title">Conhecimentos</span>
             <ul className="card__body__info__knowledge__list">
@@ -25,7 +25,7 @@ function Card() {
           </div>
         </div>
         <div className="card__body__profile-picture">
-          <img className="card__body__profile-picture__img" src={profileImg} />
+          <img className="card__body__profile-picture__img" src={img} />
         </div>         
       </div>
     </div>

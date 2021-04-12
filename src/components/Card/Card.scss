@@ -1,18 +1,19 @@
 .card {
+  align-items: center;
   background-color: #fec685;
   border-radius: 10px;
-  width: 768px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 1rem;
   overflow: hidden;
+  width: 768px;
 
   .card__title {
     background-color: #91b1fd;
-    width: 100%;
     display: flex;
     justify-content: center;
     padding: 1rem;
+    width: 100%;
 
     .card__title__text {
       font-family: Arial, Helvetica, sans-serif;
@@ -21,8 +22,8 @@
   }
 
   .card__body {
-    width: 100%;
     display: flex;
+    width: 100%;
     
     .card__body__info {
       padding: 2rem;
@@ -32,43 +33,67 @@
         font-size: 2rem;
       }
       .card__body__info__knowledge {
-        margin: 1rem;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5rem;
+        margin: 1rem;
 
         .card__body__info__knowledge__list {
-          list-style-type: none;
           display: flex;
+          list-style-type: none;
 
           .list-item {
-            height: 50px;
-            width: 50px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            height: 50px;
+            width: 50px;
             
-            &.list-item--javascript {
-              background-image: url(../../assets/svg/javascript-icon.svg);
-            }
-
-            &.list-item--html {
-              background-image: url(../../assets/svg/html-icon.svg);
-            }
-
-            &.list-item--css {
-              background-image: url(../../assets/svg/css-icon.svg);
-            }
-
-            &.list-item--react {
-              background-image: url(../../assets/svg/react-icon.svg);
+            &.list-item--angular {
+              background-image: url(../../assets/svg/angular.svg);
             }
 
             &.list-item--cpp {
-              background-image: url(../../assets/svg/cpp-icon.svg);
+              background-image: url(../../assets/svg/cpp.svg);
+            }
+
+            &.list-item--css {
+              background-image: url(../../assets/svg/css.svg);
+            }
+
+            &.list-item--html {
+              background-image: url(../../assets/svg/html.svg);
             }
 
             &.list-item--java {
-              background-image: url(../../assets/svg/java-icon.svg);
+              background-image: url(../../assets/svg/java.svg);
+            }
+
+            &.list-item--js {
+              background-image: url(../../assets/svg/js.svg);
+            }
+
+            &.list-item--mongo {
+              background-image: url(../../assets/svg/mongo.svg);
+            }
+
+            &.list-item--db {
+              background-image: url(../../assets/svg/db.svg);
+            }
+
+            &.list-item--php {
+              background-image: url(../../assets/svg/php.svg);
+            }
+
+            &.list-item--python {
+              background-image: url(../../assets/svg/python.svg);
+            }
+
+            &.list-item--react {
+              background-image: url(../../assets/svg/react.svg);
+            }
+
+            &.list-item--vue {
+              background-image: url(../../assets/svg/vue.svg);
             }
           }
         }
@@ -76,18 +101,22 @@
     }
 
     .card__body__profile-picture {
-      height: 150px;
-      width: 150px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: auto auto;
-      display: flex;
       align-items: center;
+      border-radius: 50%;
+      display: flex;
+      height: 150px;
       justify-content: center;
+      margin: auto auto;
+      overflow: hidden;
+      width: 150px;
 
       .card__body__profile-picture__img {
         width: 150px;
       }
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
